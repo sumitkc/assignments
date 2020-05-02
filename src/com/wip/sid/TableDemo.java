@@ -203,7 +203,7 @@ public class TableDemo extends JFrame {
 
     public static void main(String[] args) {
         TableDemo td = new TableDemo();
-        td.setSize(1000, 800);
+        td.setSize(1000, 600);
         td.setVisible(true);
     }
 }
