@@ -33,14 +33,16 @@ public class TableDemo extends JFrame {
     private JTextField tfIsMale;
 
     public TableDemo() {
+       //initialize the gui
         initgui();
+       //initialize data
         initData();
     }
 
     private void initData() {
-        createRow("Andrew", 27, "Physics", true);
-        createRow("Jack", 24, "Maths", true);
-        createRow("Sid", 12, "CS", true);
+        createRow("Andrew1", 15, "Physics", true);
+        createRow("Jack", 20, "Maths", false);
+        createRow("Sid", 18, "CS", true);
         createRow("Sim", 7, "Chem", false);
 
     }
@@ -79,7 +81,7 @@ public class TableDemo extends JFrame {
         System.exit(0);
     }
 
-    private void initgui() {
+    private void initgui() { 
         
         setTitle("This is my first assignment");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
