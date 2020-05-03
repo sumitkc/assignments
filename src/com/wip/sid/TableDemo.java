@@ -6,6 +6,8 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.Vector;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -73,11 +75,19 @@ public class TableDemo extends JFrame {
         
     }
     private void cleanUp(){
-        
+        this.dispose();
+        System.exit(0);
     }
 
     private void initgui() {
+        
+        setTitle("This is my first assignment");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.addWindowListener(new WindowAdapter(){
+            public void windowClosing(WindowEvent e) {
+                cleanUp();
+            }
+        });
         this.setLayout(new BorderLayout());
         JPanel topPanel = new JPanel(new BorderLayout());
         JPanel tablePanel = new JPanel(new BorderLayout());
