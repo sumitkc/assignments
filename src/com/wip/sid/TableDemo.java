@@ -19,8 +19,7 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 
 
-//My name is Siddharth
-//I stay in GGN
+
 public class TableDemo extends JFrame {
 
     private DefaultTableModel dtm;
@@ -71,8 +70,7 @@ public class TableDemo extends JFrame {
         targetRow.setElementAt(isMale, 3);
         dtm.fireTableDataChanged();
 
-        //dtm.removeRow(index);
-        //insertRow(index,name,age,dept,isMale);
+        
     }
     private void cleanUp(){
         
