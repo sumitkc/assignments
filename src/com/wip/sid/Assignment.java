@@ -8,7 +8,7 @@ import javax.swing.table.DefaultTableModel;
 public class Assignment extends javax.swing.JFrame {
 
     /**
-     * Creates new form Assignment
+     * Creates new form Assignment from somewhere
      */
     public Assignment() {
         initComponents();
